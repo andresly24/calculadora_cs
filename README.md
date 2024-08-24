@@ -12,5 +12,7 @@
 - Se agrego la opcion de eliminar un numero dentro del display
 - Se agrego operaciones entre decimales
 - Se agrego la opcion de cambiar a numeros negativos
+# 0.0.3
+- Se cambio el interfaz grafica
 
 

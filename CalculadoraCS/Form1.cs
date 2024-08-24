@@ -125,10 +125,15 @@ namespace CalculadoraCS
                     resultado = valor1 * valor2;
                     break;
                 case 4:
-                    if (valor2 == 0)
-                        tbdisplay.Text = "Error de Division";
-                    else
+                    if (valor2 != 0)
+                    {
                         resultado = valor1 / valor2;
+                    }
+                    else
+                    {
+                        tbdisplay.Text = " ";
+                    }
+                        
                     break;
             }
 
@@ -185,6 +190,17 @@ namespace CalculadoraCS
             valor1 = Convert.ToDouble(tbdisplay.Text);
             valor1 *= -1;
             tbdisplay.Text = valor1.ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // display
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //%
         }
     }
 }
