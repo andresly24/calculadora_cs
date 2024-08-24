@@ -14,10 +14,12 @@ namespace CalculadoraCS
     public partial class Form1 : Form    
     {
         private double valor1;
-        //private double valor2;
+        private double valor2;
         private double resultado;
 
-        List<double> valores = new List<double> {};
+        private int operacion;
+
+        //List<double> valores = new List<double> {};
         public Form1()
         {
             InitializeComponent();
@@ -94,30 +96,95 @@ namespace CalculadoraCS
         {
             // C
             tbdisplay.Text = " ";
-            valores.Clear();
+            //valores.Clear();
+        }
+
+        private void bcoma_Click(object sender, EventArgs e)
+        {
+            tbdisplay.Text = tbdisplay.Text + ",";
         }
 
         private void igual_Click(object sender, EventArgs e)
         {
             // =
-            //valor2 = Convert.ToDouble(tbdisplay.Text);
-            //resultado = valor2 + valor1;
-            //tbdisplay.Text = resultado.ToString();
-            valores.Add(valor1);
-            resultado = valores.Sum();
-            tbdisplay.Text = resultado.ToString();
-            valores.Remove(valor1);
+            valor2 = Convert.ToDouble(tbdisplay.Text);
             
+            //valores.Add(valor1);
+            //resultado = valores.Sum();
+            //tbdisplay.Text = resultado.ToString();
+
+            switch (operacion)
+            {
+                case 1:
+                    resultado = valor1 + valor2;
+                    break;
+                case 2:
+                    resultado = valor1 - valor2;
+                    break;
+                case 3:
+                    resultado = valor1 * valor2;
+                    break;
+                case 4:
+                    if (valor2 == 0)
+                        tbdisplay.Text = "Error de Division";
+                    else
+                        resultado = valor1 / valor2;
+                    break;
+            }
+
+            tbdisplay.Text = resultado.ToString();
+
         }
 
         private void suma_Click(object sender, EventArgs e)
         {
+            operacion = 1;
             valor1 = Convert.ToDouble(tbdisplay.Text);
-            valores.Add(valor1);
-            tbdisplay.Text = " ";
-
-           
+            tbdisplay.Text = "";
             
+        }
+
+        private void resta_Click(object sender, EventArgs e)
+        {
+            operacion = 2;
+            valor1 = Convert.ToDouble(tbdisplay.Text);
+            tbdisplay.Text = "";
+        }
+
+        private void multiplicacion_Click(object sender, EventArgs e)
+        {
+            operacion = 3;
+            valor1 = Convert.ToDouble(tbdisplay.Text);
+            tbdisplay.Text = "";
+        }
+
+        private void divicion_Click(object sender, EventArgs e)
+        {
+            operacion = 4;
+            valor1 = Convert.ToDouble(tbdisplay.Text);
+            tbdisplay.Text = "";
+        }
+
+        private void borrar_Click(object sender, EventArgs e)
+        {
+            // borrar
+            if (tbdisplay.Text.Length > 1)
+            {
+                tbdisplay.Text = tbdisplay.Text.Substring(0, tbdisplay.Text.Length - 1);
+            }
+            else
+            {
+                tbdisplay.Text = "";
+            }
+
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            // -/+
+            valor1 = Convert.ToDouble(tbdisplay.Text);
+            valor1 *= -1;
+            tbdisplay.Text = valor1.ToString();
         }
     }
 }

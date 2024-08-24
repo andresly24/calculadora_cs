@@ -63,9 +63,10 @@
             this.tbdisplay.Location = new System.Drawing.Point(12, 12);
             this.tbdisplay.Multiline = true;
             this.tbdisplay.Name = "tbdisplay";
-            this.tbdisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.tbdisplay.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbdisplay.Size = new System.Drawing.Size(306, 80);
             this.tbdisplay.TabIndex = 0;
+            this.tbdisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tbdisplay.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // contextMenuStrip1
@@ -113,6 +114,7 @@
             this.borrar.TabIndex = 5;
             this.borrar.Text = "⌫";
             this.borrar.UseVisualStyleBackColor = true;
+            this.borrar.Click += new System.EventHandler(this.borrar_Click);
             // 
             // button5
             // 
@@ -143,6 +145,7 @@
             this.divicion.TabIndex = 9;
             this.divicion.Text = "÷";
             this.divicion.UseVisualStyleBackColor = true;
+            this.divicion.Click += new System.EventHandler(this.divicion_Click);
             // 
             // b7
             // 
@@ -186,6 +189,7 @@
             this.multiplicacion.TabIndex = 13;
             this.multiplicacion.Text = "×";
             this.multiplicacion.UseVisualStyleBackColor = true;
+            this.multiplicacion.Click += new System.EventHandler(this.multiplicacion_Click);
             // 
             // b4
             // 
@@ -229,6 +233,7 @@
             this.resta.TabIndex = 17;
             this.resta.Text = "-";
             this.resta.UseVisualStyleBackColor = true;
+            this.resta.Click += new System.EventHandler(this.resta_Click);
             // 
             // b1
             // 
@@ -272,6 +277,7 @@
             this.button21.TabIndex = 22;
             this.button21.Text = "+/-";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // b0
             // 
@@ -293,6 +299,7 @@
             this.bcoma.TabIndex = 24;
             this.bcoma.Text = ",";
             this.bcoma.UseVisualStyleBackColor = true;
+            this.bcoma.Click += new System.EventHandler(this.bcoma_Click);
             // 
             // igual
             // 
