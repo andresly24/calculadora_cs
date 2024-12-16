@@ -35,73 +35,146 @@ namespace CalculadoraCS
         private void b0_Click(object sender, EventArgs e)
         {
             //0
-            tbdisplay.Text = tbdisplay.Text + "0";
+            if (tbdisplay.Text == "0")
+            {
+                tbdisplay.Text = "0";
+            }
+            else
+            {
+                tbdisplay.Text = tbdisplay.Text + "0";
+            }
         }
 
         private void b1_Click(object sender, EventArgs e)
         {
             //1
-            tbdisplay.Text = tbdisplay.Text + "1";
+            if (tbdisplay.Text == "0")
+            {
+                tbdisplay.Text = "1";
+            }
+            else
+            {
+                tbdisplay.Text = tbdisplay.Text + "1";
+            }
+            
         }
 
         private void b2_Click(object sender, EventArgs e)
         {
             //2
-            tbdisplay.Text = tbdisplay.Text + "2";
+            if (tbdisplay.Text == "0")
+            {
+                tbdisplay.Text = "2";
+            }
+            else
+            {
+                tbdisplay.Text = tbdisplay.Text + "2";
+            }
         }
 
         private void b3_Click(object sender, EventArgs e)
         {
             //3
-            tbdisplay.Text = tbdisplay.Text + "3";
+            if (tbdisplay.Text == "0")
+            {
+                tbdisplay.Text = "3";
+            }
+            else
+            {
+                tbdisplay.Text = tbdisplay.Text + "3";
+            }
         }
 
         private void b4_Click(object sender, EventArgs e)
         {
             //4
-            tbdisplay.Text = tbdisplay.Text + "4";
+            if (tbdisplay.Text == "0")
+            {
+                tbdisplay.Text = "4";
+            }
+            else
+            {
+                tbdisplay.Text = tbdisplay.Text + "4";
+            }
         }
 
         private void b5_Click(object sender, EventArgs e)
         {
             //5
-            tbdisplay.Text = tbdisplay.Text + "5";
+            if (tbdisplay.Text == "0")
+            {
+                tbdisplay.Text = "5";
+            }
+            else
+            {
+                tbdisplay.Text = tbdisplay.Text + "5";
+            }
         }
 
         private void b6_Click(object sender, EventArgs e)
         {
             //6
-            tbdisplay.Text = tbdisplay.Text + "6";
+            if (tbdisplay.Text == "0")
+            {
+                tbdisplay.Text = "6";
+            }
+            else
+            {
+                tbdisplay.Text = tbdisplay.Text + "6";
+            }
         }
 
         private void b7_Click(object sender, EventArgs e)
         {
             //7
-            tbdisplay.Text = tbdisplay.Text + "7";
+            if (tbdisplay.Text == "0")
+            {
+                tbdisplay.Text = "7";
+            }
+            else
+            {
+                tbdisplay.Text = tbdisplay.Text + "7";
+            }
         }
 
         private void b8_Click(object sender, EventArgs e)
         {
             //8
-            tbdisplay.Text = tbdisplay.Text + "8";
+            if (tbdisplay.Text == "0")
+            {
+                tbdisplay.Text = "8";
+            }
+            else
+            {
+                tbdisplay.Text = tbdisplay.Text + "8";
+            }
         }
 
         private void b9_Click(object sender, EventArgs e)
         {
             //9
-            tbdisplay.Text = tbdisplay.Text + "9";
+            if (tbdisplay.Text == "0")
+            {
+                tbdisplay.Text = "9";
+            }
+            else
+            {
+                tbdisplay.Text = tbdisplay.Text + "9";
+            }
         }
 
         private void bC_Click(object sender, EventArgs e)
         {
             // C
-            tbdisplay.Text = " ";
+            tbdisplay.Text = "0";
+            tbg.Text = "";
+            valor1 = 0;
             //valores.Clear();
         }
 
         private void bcoma_Click(object sender, EventArgs e)
         {
-            tbdisplay.Text = tbdisplay.Text + ",";
+            tbdisplay.Text = tbdisplay.Text + ".";
         }
 
         private void igual_Click(object sender, EventArgs e)
@@ -117,57 +190,63 @@ namespace CalculadoraCS
             {
                 case 1:
                     resultado = valor1 + valor2;
+                    tbg.Text = $"{valor1} + {valor2} =";
+                    
                     break;
                 case 2:
                     resultado = valor1 - valor2;
+                    tbg.Text = $"{valor1} - {valor2} =";
                     break;
                 case 3:
                     resultado = valor1 * valor2;
+                    tbg.Text = $"{valor1} x {valor2} =";
                     break;
                 case 4:
                     if (valor2 != 0)
                     {
                         resultado = valor1 / valor2;
+                        tbg.Text = $"{valor1} ÷ {valor2} =";
                     }
                     else
                     {
                         tbdisplay.Text = " ";
-                    }
-                        
+                    }      
                     break;
             }
 
             tbdisplay.Text = resultado.ToString();
-
         }
 
         private void suma_Click(object sender, EventArgs e)
         {
-            operacion = 1;
+            operacion = 1;          
             valor1 = Convert.ToDouble(tbdisplay.Text);
-            tbdisplay.Text = "";
-            
+            tbg.Text = $"{valor1} +";
+            tbdisplay.Text = "0";  
         }
 
         private void resta_Click(object sender, EventArgs e)
         {
             operacion = 2;
             valor1 = Convert.ToDouble(tbdisplay.Text);
-            tbdisplay.Text = "";
+            tbg.Text = $"{valor1} -";
+            tbdisplay.Text = "0";
         }
 
         private void multiplicacion_Click(object sender, EventArgs e)
         {
             operacion = 3;
             valor1 = Convert.ToDouble(tbdisplay.Text);
-            tbdisplay.Text = "";
+            tbg.Text = $"{valor1} x";
+            tbdisplay.Text = "0";
         }
 
         private void divicion_Click(object sender, EventArgs e)
         {
             operacion = 4;
             valor1 = Convert.ToDouble(tbdisplay.Text);
-            tbdisplay.Text = "";
+            tbg.Text = $"{valor1} ÷";
+            tbdisplay.Text = "0";
         }
 
         private void borrar_Click(object sender, EventArgs e)
@@ -179,7 +258,7 @@ namespace CalculadoraCS
             }
             else
             {
-                tbdisplay.Text = "";
+                tbdisplay.Text = "0";
             }
 
         }
@@ -195,12 +274,43 @@ namespace CalculadoraCS
         private void Form1_Load(object sender, EventArgs e)
         {
             // display
-            
+            this.ActiveControl = igual;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             //%
+            double res = 0;
+            valor2 = Convert.ToDouble(tbdisplay.Text);
+            res = (valor1 * valor2) / 100;
+            tbg.Text = tbg.Text + res;
+            tbdisplay.Text = res.ToString();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            // sqr(x)
+            double res = 0;
+            valor1 = Convert.ToDouble(tbdisplay.Text);
+            res = valor1 * valor1;
+            tbg.Text = $"sqr({valor1})";
+            tbdisplay.Text = res.ToString();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // 1/x
+            double res = 0;
+            valor1 = Convert.ToDouble(tbdisplay.Text);
+            res = 1 / valor1;
+            tbg.Text = $"1/({valor1})";
+            tbdisplay.Text = res.ToString();
+        }
+
+        private void bCE_Click(object sender, EventArgs e)
+        {
+            // CE
+            tbdisplay.Text = "0";
         }
     }
 }

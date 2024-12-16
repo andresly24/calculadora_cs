@@ -55,6 +55,7 @@
             this.igual = new System.Windows.Forms.Button();
             this.b2 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.tbg = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tbdisplay
@@ -62,12 +63,13 @@
             this.tbdisplay.BackColor = System.Drawing.SystemColors.Menu;
             this.tbdisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbdisplay.Font = new System.Drawing.Font("Segoe UI", 27.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.tbdisplay.Location = new System.Drawing.Point(12, 12);
+            this.tbdisplay.Location = new System.Drawing.Point(12, 33);
             this.tbdisplay.Multiline = true;
             this.tbdisplay.Name = "tbdisplay";
             this.tbdisplay.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbdisplay.Size = new System.Drawing.Size(306, 80);
+            this.tbdisplay.Size = new System.Drawing.Size(306, 60);
             this.tbdisplay.TabIndex = 0;
+            this.tbdisplay.Text = "0";
             this.tbdisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tbdisplay.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -98,6 +100,7 @@
             this.bCE.TabIndex = 3;
             this.bCE.Text = "CE";
             this.bCE.UseVisualStyleBackColor = false;
+            this.bCE.Click += new System.EventHandler(this.bCE_Click);
             // 
             // bC
             // 
@@ -133,6 +136,7 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "¹/×";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -144,6 +148,7 @@
             this.button6.TabIndex = 7;
             this.button6.Text = "x²";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // divicion
             // 
@@ -363,12 +368,27 @@
             this.button2.Text = " √x";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // tbg
+            // 
+            this.tbg.BackColor = System.Drawing.SystemColors.Menu;
+            this.tbg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbg.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbg.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.tbg.Location = new System.Drawing.Point(12, 12);
+            this.tbg.Multiline = true;
+            this.tbg.Name = "tbg";
+            this.tbg.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tbg.Size = new System.Drawing.Size(305, 24);
+            this.tbg.TabIndex = 28;
+            this.tbg.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(329, 451);
+            this.Controls.Add(this.tbg);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.b2);
             this.Controls.Add(this.igual);
@@ -430,6 +450,7 @@
         private System.Windows.Forms.Button igual;
         private System.Windows.Forms.Button b2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox tbg;
     }
 }
 

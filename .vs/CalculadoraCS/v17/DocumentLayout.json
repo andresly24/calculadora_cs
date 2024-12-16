@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Andres Li\\source\\repos\\andresly24\\calculadora_cs\\",
+  "WorkspaceRootPath": "C:\\Users\\TechSoft\\Documents\\Repos C#\\calculadora_cs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BCEE5A29-6F43-4CFD-B3A9-2F07E277526F}|CalculadoraCS\\CalculadoraCS.csproj|c:\\users\\andres li\\source\\repos\\andresly24\\calculadora_cs\\calculadoracs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BCEE5A29-6F43-4CFD-B3A9-2F07E277526F}|CalculadoraCS\\CalculadoraCS.csproj|c:\\users\\techsoft\\documents\\repos c#\\calculadora_cs\\calculadoracs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCEE5A29-6F43-4CFD-B3A9-2F07E277526F}|CalculadoraCS\\CalculadoraCS.csproj|solutionrelative:calculadoracs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCEE5A29-6F43-4CFD-B3A9-2F07E277526F}|CalculadoraCS\\CalculadoraCS.csproj|C:\\Users\\Andres Li\\source\\repos\\andresly24\\calculadora_cs\\calculadoracs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BCEE5A29-6F43-4CFD-B3A9-2F07E277526F}|CalculadoraCS\\CalculadoraCS.csproj|C:\\Users\\TechSoft\\Documents\\Repos C#\\calculadora_cs\\calculadoracs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BCEE5A29-6F43-4CFD-B3A9-2F07E277526F}|CalculadoraCS\\CalculadoraCS.csproj|solutionrelative:calculadoracs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,17 +18,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 19,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a34b1c5d-6d37-4a0c-a8b0-99f8e8158b48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Andres Li\\source\\repos\\andresly24\\calculadora_cs\\CalculadoraCS\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\TechSoft\\Documents\\Repos C#\\calculadora_cs\\CalculadoraCS\\Form1.cs",
               "RelativeDocumentMoniker": "CalculadoraCS\\Form1.cs",
-              "ToolTip": "C:\\Users\\Andres Li\\source\\repos\\andresly24\\calculadora_cs\\CalculadoraCS\\Form1.cs",
+              "ToolTip": "C:\\Users\\TechSoft\\Documents\\Repos C#\\calculadora_cs\\CalculadoraCS\\Form1.cs",
               "RelativeToolTip": "CalculadoraCS\\Form1.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAYwKgAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAjwNQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T19:36:40.85Z",
               "EditorCaption": ""
@@ -36,14 +112,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Andres Li\\source\\repos\\andresly24\\calculadora_cs\\CalculadoraCS\\Form1.cs",
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TechSoft\\Documents\\Repos C#\\calculadora_cs\\CalculadoraCS\\Form1.cs",
               "RelativeDocumentMoniker": "CalculadoraCS\\Form1.cs",
-              "ToolTip": "C:\\Users\\Andres Li\\source\\repos\\andresly24\\calculadora_cs\\CalculadoraCS\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CalculadoraCS\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\TechSoft\\Documents\\Repos C#\\calculadora_cs\\CalculadoraCS\\Form1.cs [Design]",
+              "RelativeToolTip": "CalculadoraCS\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T19:18:46.017Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1858,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
             }
           ]
         }
