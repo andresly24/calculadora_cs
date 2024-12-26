@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tbdisplay = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.button1 = new System.Windows.Forms.Button();
@@ -62,7 +63,7 @@
             // 
             this.tbdisplay.BackColor = System.Drawing.SystemColors.Menu;
             this.tbdisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbdisplay.Font = new System.Drawing.Font("Segoe UI", 27.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tbdisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbdisplay.Location = new System.Drawing.Point(12, 33);
             this.tbdisplay.Multiline = true;
             this.tbdisplay.Name = "tbdisplay";
@@ -71,7 +72,6 @@
             this.tbdisplay.TabIndex = 0;
             this.tbdisplay.Text = "0";
             this.tbdisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.tbdisplay.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // contextMenuStrip1
             // 
@@ -414,8 +414,9 @@
             this.Controls.Add(this.bCE);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbdisplay);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

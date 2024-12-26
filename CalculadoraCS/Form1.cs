@@ -19,16 +19,12 @@ namespace CalculadoraCS
 
         private int operacion;
 
+        private bool Pressed = false;
+
         //List<double> valores = new List<double> {};
         public Form1()
         {
             InitializeComponent();
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            //display
             
         }
 
@@ -38,6 +34,12 @@ namespace CalculadoraCS
             if (tbdisplay.Text == "0")
             {
                 tbdisplay.Text = "0";
+                
+            }
+            else if (Pressed){
+                tbdisplay.Text = "0";
+                Pressed = false;
+                tbg.Text = "";
             }
             else
             {
@@ -50,7 +52,13 @@ namespace CalculadoraCS
             //1
             if (tbdisplay.Text == "0")
             {
+                tbdisplay.Text = "1";   
+            }
+            else if (Pressed)
+            {
                 tbdisplay.Text = "1";
+                Pressed = false;
+                tbg.Text = "";
             }
             else
             {
@@ -62,9 +70,15 @@ namespace CalculadoraCS
         private void b2_Click(object sender, EventArgs e)
         {
             //2
-            if (tbdisplay.Text == "0")
+            if (tbdisplay.Text == "0" )
             {
                 tbdisplay.Text = "2";
+            }
+            else if (Pressed)
+            {
+                tbdisplay.Text = "2";
+                Pressed = false;
+                tbg.Text = "";
             }
             else
             {
@@ -75,9 +89,15 @@ namespace CalculadoraCS
         private void b3_Click(object sender, EventArgs e)
         {
             //3
-            if (tbdisplay.Text == "0")
+            if (tbdisplay.Text == "0" )
             {
                 tbdisplay.Text = "3";
+            }
+            else if (Pressed)
+            {
+                tbdisplay.Text = "3";
+                Pressed = false;
+                tbg.Text = "";
             }
             else
             {
@@ -92,6 +112,12 @@ namespace CalculadoraCS
             {
                 tbdisplay.Text = "4";
             }
+            else if (Pressed)
+            {
+                tbdisplay.Text = "4";
+                Pressed = false;
+                tbg.Text = "";
+            }
             else
             {
                 tbdisplay.Text = tbdisplay.Text + "4";
@@ -104,6 +130,12 @@ namespace CalculadoraCS
             if (tbdisplay.Text == "0")
             {
                 tbdisplay.Text = "5";
+            }
+            else if (Pressed)
+            {
+                tbdisplay.Text = "5";
+                Pressed = false;
+                tbg.Text = "";
             }
             else
             {
@@ -118,6 +150,12 @@ namespace CalculadoraCS
             {
                 tbdisplay.Text = "6";
             }
+            else if (Pressed)
+            {
+                tbdisplay.Text = "6";
+                Pressed = false;
+                tbg.Text = "";
+            }
             else
             {
                 tbdisplay.Text = tbdisplay.Text + "6";
@@ -131,6 +169,12 @@ namespace CalculadoraCS
             {
                 tbdisplay.Text = "7";
             }
+            else if (Pressed)
+            {
+                tbdisplay.Text = "7";
+                Pressed = false;
+                tbg.Text = "";
+            }
             else
             {
                 tbdisplay.Text = tbdisplay.Text + "7";
@@ -143,6 +187,13 @@ namespace CalculadoraCS
             if (tbdisplay.Text == "0")
             {
                 tbdisplay.Text = "8";
+                Pressed = false;
+            }
+            else if (Pressed)
+            {
+                tbdisplay.Text = "8";
+                Pressed = false;
+                tbg.Text = "";
             }
             else
             {
@@ -156,6 +207,12 @@ namespace CalculadoraCS
             if (tbdisplay.Text == "0")
             {
                 tbdisplay.Text = "9";
+            }
+            else if (Pressed)
+            {
+                tbdisplay.Text = "9";
+                Pressed = false;
+                tbg.Text = "";
             }
             else
             {
@@ -215,6 +272,7 @@ namespace CalculadoraCS
             }
 
             tbdisplay.Text = resultado.ToString();
+            Pressed = true;
         }
 
         private void suma_Click(object sender, EventArgs e)
@@ -275,6 +333,8 @@ namespace CalculadoraCS
         {
             // display
             this.ActiveControl = igual;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
 
         private void button1_Click(object sender, EventArgs e)

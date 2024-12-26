@@ -6,6 +6,12 @@
 
 - Se actualizara los versionamientos de cada agregacion y bugfix
 
+## Version 1.1.0
+- Se agrego nuevo icono
+- Se cambio el font SemiBold en los numeros
+- Ahora cuando realices una operacion, el numero ya no acumulara con el resultado.
+- Ahora no se puede Redimensionar
+
 ## Version 1.0.0
 - Se agrego el historial de numeros en el interfaz
 - Se agrego la funcion de x al cuadrado
