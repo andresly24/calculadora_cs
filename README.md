@@ -7,10 +7,12 @@
 - Se actualizara los versionamientos de cada agregacion y bugfix
 
 ## Version 1.1.0
-- Se agrego nuevo icono
+- Se agrego nuevo icono en la pantalla
+- Se agrego nuevo icono el aplicacion .exe
 - Se cambio el font SemiBold en los numeros
 - Ahora cuando realices una operacion, el numero ya no acumulara con el resultado.
-- Ahora no se puede Redimensionar
+- Ahora no se puede Redimensionar la pantalla
+
 
 ## Version 1.0.0
 - Se agrego el historial de numeros en el interfaz
