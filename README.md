@@ -31,7 +31,6 @@
 
 #### BugFix
 - Se corrigio el Error de C
-
 - Todas las operaciones funcionan
 
 ## Version 0.0.3
