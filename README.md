@@ -4,7 +4,15 @@
 - Es posible que exista varios errores y bug sin corregir, en lo que pase el tiempo se arreglara y renderizara la calculadora.
 - Esta calculadora esta basada en la calculadora de windows
 
-- Se actualizara los versionamientos de cada agregacion y bugfix
+- Se actualizara los versionamientos de cada adicion de codigo y bugfix
+
+## Version 1.1.1
+- Se agrego la opcion de escribir con teclado
+
+##### BugFix
+- Se corrigio el error de varios "."
+- Se corrigio el TextBox ya no se puede escribir letras
+- Se corrigio el TextBox ya no es seleccionable
 
 ## Version 1.1.0
 - Se agrego nuevo icono en la pantalla
@@ -13,15 +21,16 @@
 - Ahora cuando realices una operacion, el numero ya no acumulara con el resultado.
 - Ahora no se puede Redimensionar la pantalla
 
-
 ## Version 1.0.0
 - Se agrego el historial de numeros en el interfaz
 - Se agrego la funcion de x al cuadrado
 - Se agrego la funcion de 1/x
 - Se agrego el 0 como numero principal
 - Se agrego CE
-- Se corrigio el Error de C
 - Se agrego la funcion %
+
+#### BugFix
+- Se corrigio el Error de C
 
 - Todas las operaciones funcionan
 

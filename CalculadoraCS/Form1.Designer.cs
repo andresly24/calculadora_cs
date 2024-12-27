@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.tbdisplay = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.bCE = new System.Windows.Forms.Button();
@@ -57,21 +56,8 @@
             this.b2 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tbg = new System.Windows.Forms.TextBox();
+            this.tbdisplay = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // tbdisplay
-            // 
-            this.tbdisplay.BackColor = System.Drawing.SystemColors.Menu;
-            this.tbdisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbdisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbdisplay.Location = new System.Drawing.Point(12, 33);
-            this.tbdisplay.Multiline = true;
-            this.tbdisplay.Name = "tbdisplay";
-            this.tbdisplay.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbdisplay.Size = new System.Drawing.Size(306, 60);
-            this.tbdisplay.TabIndex = 0;
-            this.tbdisplay.Text = "0";
-            this.tbdisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // contextMenuStrip1
             // 
@@ -372,6 +358,7 @@
             // 
             this.tbg.BackColor = System.Drawing.SystemColors.Menu;
             this.tbg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbg.Enabled = false;
             this.tbg.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbg.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.tbg.Location = new System.Drawing.Point(12, 12);
@@ -381,6 +368,20 @@
             this.tbg.Size = new System.Drawing.Size(305, 24);
             this.tbg.TabIndex = 28;
             this.tbg.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // tbdisplay
+            // 
+            this.tbdisplay.BackColor = System.Drawing.SystemColors.Menu;
+            this.tbdisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbdisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbdisplay.Location = new System.Drawing.Point(12, 33);
+            this.tbdisplay.Name = "tbdisplay";
+            this.tbdisplay.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tbdisplay.Size = new System.Drawing.Size(306, 48);
+            this.tbdisplay.TabIndex = 0;
+            this.tbdisplay.Text = "0";
+            this.tbdisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbdisplay.Enter += new System.EventHandler(this.tbdisplay_Enter);
             // 
             // Form1
             // 
@@ -424,8 +425,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox tbdisplay;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button bCE;
@@ -452,6 +451,7 @@
         private System.Windows.Forms.Button b2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox tbg;
+        private System.Windows.Forms.TextBox tbdisplay;
     }
 }
 

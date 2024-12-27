@@ -25,7 +25,10 @@ namespace CalculadoraCS
         public Form1()
         {
             InitializeComponent();
-            
+
+            this.KeyPress += new KeyPressEventHandler(Form1_KeyPress); 
+            this.KeyPreview = true;
+
         }
 
         private void b0_Click(object sender, EventArgs e)
@@ -231,8 +234,17 @@ namespace CalculadoraCS
 
         private void bcoma_Click(object sender, EventArgs e)
         {
-            tbdisplay.Text = tbdisplay.Text + ".";
+            // coma
+            if (!tbdisplay.Text.Contains("."))
+            {
+                tbdisplay.Text = tbdisplay.Text + ".";
+            }
+            if (tbdisplay.Text == ".")
+            {
+                tbdisplay.Text = "0.";
+            }
         }
+
 
         private void igual_Click(object sender, EventArgs e)
         {
@@ -335,6 +347,8 @@ namespace CalculadoraCS
             this.ActiveControl = igual;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -371,6 +385,83 @@ namespace CalculadoraCS
         {
             // CE
             tbdisplay.Text = "0";
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '0')
+            {
+                b0_Click(sender, e);
+            }
+            if (e.KeyChar == '1')
+            {
+                b1_Click(sender, e);
+            }
+            if (e.KeyChar == '2')
+            {
+                b2_Click(sender, e);
+            }
+            if (e.KeyChar == '3')
+            {
+                b3_Click(sender, e);
+            }
+            if (e.KeyChar == '4')
+            {
+                b4_Click(sender, e);
+            }
+            if (e.KeyChar == '5')
+            {
+                b5_Click(sender, e);
+            }
+            if (e.KeyChar == '6')
+            {
+                b6_Click(sender, e);
+            }
+            if (e.KeyChar == '7')
+            {
+                b7_Click(sender, e);
+            }
+            if (e.KeyChar == '8')
+            {
+                b8_Click(sender, e);
+            }
+            if (e.KeyChar == '9')
+            {
+                b9_Click(sender, e);
+            }
+            if (e.KeyChar == '+')
+            {
+                suma_Click(sender, e);
+            }
+            if (e.KeyChar == '-')
+            {
+                resta_Click(sender, e);
+            }
+            if (e.KeyChar == '*')
+            {
+                multiplicacion_Click(sender, e);
+            }
+            if (e.KeyChar == '/')
+            {
+                divicion_Click(sender, e);
+            }
+            if (e.KeyChar == '=')
+            {
+                igual_Click(sender, e);
+            }
+            if (e.KeyChar == (char)Keys.Back)
+            {
+                borrar_Click(sender, e);
+            }
+            if (e.KeyChar == '.')
+            {
+                bcoma_Click(sender, e);
+            }
+        }
+
+        private void tbdisplay_Enter(object sender, EventArgs e)
+        {
+            ActiveControl = tbg;
         }
     }
 }
